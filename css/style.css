@@ -9,10 +9,14 @@ body {
   font-size: 14px;
 }
 
-.header {
+.container {
   max-width: 1146px;
   margin: auto;
-  padding-top: 30px;
+}
+
+.header {
+  padding: 30px 0;
+  margin-bottom: 12px;
 }
 
 .navbar {
@@ -91,3 +95,138 @@ body {
   margin-right: 5px;
 }
 
+* {
+  /* outline: 1px solid red; */
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 25px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 264px;
+  margin-bottom: 20px;
+}
+
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.card-image {
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  color: #256EEB;
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-price {
+  display: inline-block;
+  color: #0A143A;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #C4C4C4;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 4px;
+}
+
+.like {
+  border: none;
+  color: #C4C4C4;
+  background-color: #fff;
+}
+
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 23px;
+}
+
+.service {
+  margin-bottom: 25px;
+}
+
+.service-title {
+  margin: 7px 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0A143A;
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #0A143A;
+  max-width: 217px;
+  margin: 0;
+}
+
+.footer-text {
+  color: #C4C4C4;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.footer-menu-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.footer-menu-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #0A143A;
+}
